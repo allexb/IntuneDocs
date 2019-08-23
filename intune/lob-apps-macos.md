@@ -43,6 +43,8 @@ You must download an external tool, mark the downloaded tool as an executable, a
 
 > [!IMPORTANT]
 > The *.pkg* file must be signed using “Developer ID Installer” certificate, obtained from an Apple Developer account. Only *.pkg* files may be used to upload macOS LOB apps to Microsoft Intune. Conversion of other formats, such as *.dmg* to *.pkg* is not supported.
+> It is not supported to use wrapped vendor *.pkg* to custom *.pkg* (if modification or repackaging is required)
+> It is not supported to use *.pkg* without bundle path="./AppName.app" (like package with url or link, package without *.app*, etc.)
 >
 
 1. Download the [Intune App Wrapping Tool for Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac).
